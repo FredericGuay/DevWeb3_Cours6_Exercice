@@ -16,9 +16,9 @@
     <h2>Exercice</h2>
     <form action="/connexion.php" method="post">
         <label for="account">Votre compte</label></br>
-        <input type="text" id="account_name" name="account_name"></br>
+        <input type="text" id="account_name" name="account_name" pattern = "^\D{8,10}$"></br>
         <label for="password">Mot de passe</label></br>
-        <input type="text" id="password" name="password"></br>
+        <input type="text" id="password" name="password" required></br>
         <input type="submit" value="Submit">
     </form>
 </body>
